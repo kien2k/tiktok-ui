@@ -27,6 +27,7 @@
         caret-color: var(--primary-color);
         font-family: var(--font-family);
         flex: 1;
+        padding-right: 42px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {

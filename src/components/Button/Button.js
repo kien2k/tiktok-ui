@@ -35,8 +35,6 @@ function Button({
     });
     const props = {
         onClick,
-        leftIcon,
-        rightIcon,
         ...passProps,
     };
 
