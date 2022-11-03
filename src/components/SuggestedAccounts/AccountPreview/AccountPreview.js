@@ -4,13 +4,14 @@ import Button from '~/components/Button';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './AccountPreview.module.scss';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 function AccountPreview() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
-                <img
+                <Image
                     src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1662602400&x-signature=QiFu19QyO2IC5vABO0fYgmZQX%2F4%3D"
                     alt="avatar"
                     className={cx('avatar')}

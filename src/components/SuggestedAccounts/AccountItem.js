@@ -7,6 +7,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 
 import styles from './SuggestedAccounts.module.scss';
 import AccountPreview from './AccountPreview';
+import Image from '../Image';
 
 const cx = classNames.bind(styles);
 
@@ -22,7 +23,7 @@ function AccountItem() {
         <div>
             <Tippy interactive delay={[900, 300]} placement="bottom" offset={[-22, 0]} render={accountPreview}>
                 <div className={cx('account-item')}>
-                    <img
+                    <Image
                         src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1662602400&x-signature=QiFu19QyO2IC5vABO0fYgmZQX%2F4%3D"
                         alt="avatar"
                         className={cx('avartar')}
