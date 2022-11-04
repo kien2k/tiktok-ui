@@ -1,7 +1,7 @@
 import ContentItem from "./ContentItem";
 function Home() {
     return (
-        <div className="wrapper">
+        <div className="wrapper" > 
             <ContentItem/>
         </div>
     );

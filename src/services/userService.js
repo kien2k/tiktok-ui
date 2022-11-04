@@ -13,3 +13,5 @@ export const getSuggested = async ({ page, perPage }) => {
         console.log(error);
     }
 };
+
+

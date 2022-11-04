@@ -24,14 +24,14 @@ function Sidebar() {
 
     useEffect(() => {
         userService
-            .getSuggested({ page: 1, perPage: 5 })
+            .getSuggested({ page: 6, perPage: 5 })
             .then((data) => {
                 getSuggestedUsers(data);
             })
             .catch(() => console.log('error'));
 
         followService
-            .getFollowing({ page: 1 })
+            .getFollowing( {page: 1} )
             .then((data) => {
                 console.log(data);
             })
