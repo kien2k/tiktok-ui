@@ -1,15 +1,12 @@
 import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCheckCircle,
     faCommentDots,
     faHeart,
-    faPause,
-    faPlay,
     faShare,
-    faVolumeHigh,
 } from '@fortawesome/free-solid-svg-icons';
-import { faFlag } from '@fortawesome/free-regular-svg-icons';
 import Tippy from '@tippyjs/react';
 
 import Button from '~/components/Button';
@@ -17,7 +14,7 @@ import Image from '~/components/Image';
 import styles from './ContentItem.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import LinkShareList from '~/components/LinkShareList';
-import { Link } from 'react-router-dom';
+import VideoContent from "~/components/VideoContent"
 
 const cx = classNames.bind(styles);
 function ContentItem() {
@@ -58,23 +55,7 @@ function ContentItem() {
                         </h4>
                     </div>
                     <div className={cx('video-wrapper')}>
-                        <div className={cx('video-item')}>
-                            <video
-                                className={cx('video')}
-                                src="https://v16-webapp.tiktok.com/f0632f79ab14de08acb1d957f7de76dd/63676fe7/video/tos/maliva/tos-maliva-ve-0068c799-us/4c69a8dac0ac41528eca10fbf85e4a2f/?a=1988&ch=0&cr=0&dr=0&lr=tiktok&cd=0%7C0%7C1%7C0&cv=1&br=3096&bt=1548&cs=0&ds=2&ft=kLO5qy-gZmo0PPm83BkVQ1sxDiHKJdmC0&mime_type=video_mp4&qs=0&rc=OjU4OjM3ZTtnZmUzNTRoZUBpajtpdTU6ZjprZjMzZzczNEBeNl5fYzI0XmAxMl9hLTYtYSMtMDVocjQwMWNgLS1kMS9zcw%3D%3D&l=20221106022713010245242205151AC08F&btag=80000"
-                            ></video>
-                            <p className={cx('video-report')}>
-                                <FontAwesomeIcon icon={faFlag} className={cx('report-icon')} />
-                                Report
-                            </p>
-                            <p className={cx('toggle-play-btn')}>
-                                <FontAwesomeIcon icon={faPlay} className={cx('play-icon')} />
-                                <FontAwesomeIcon icon={faPause} className={cx('pause-icon')} />
-                            </p>
-                            <p className={cx('volume-btn')}>
-                                <FontAwesomeIcon icon={faVolumeHigh} className={cx('volume-icon')} />
-                            </p>
-                        </div>
+                        <VideoContent/>
                         <div className={cx('interaction')}>
                             <div className={cx('interaction-item')}>
                                 <div className={cx('interaction-btn')}>
