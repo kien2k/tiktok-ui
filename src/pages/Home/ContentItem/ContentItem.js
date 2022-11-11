@@ -9,6 +9,7 @@ import Image from '~/components/Image';
 import styles from './ContentItem.module.scss';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import LinkShareList from '~/components/LinkShareList';
+import { Link } from 'react-router-dom';
 
 const cx = classNames.bind(styles);
 function ContentItem() {
@@ -30,13 +31,13 @@ function ContentItem() {
                 ></Image>
                 <div className={cx('content')}>
                     <div className={cx('info')}>
-                        <a src="" className={'info-link'}>
+                        <Link to={'user'} className={cx('info-link')}>
                             <h3 className={cx('nick-name')}>
                                 <strong>Levantrungkien</strong>
                                 <FontAwesomeIcon icon={faCheckCircle} className={cx('check')} />
                             </h3>
                             <h4 className={cx('user-name')}>Le Van Trung Kien</h4>
-                        </a>
+                        </Link>
                         <Button outline small className={cx('btn')}>
                             Follow
                         </Button>
