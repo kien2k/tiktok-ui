@@ -16,15 +16,15 @@ function VideoContent() {
             <video src="" className={cx('video')}> 
             </video>
             <p className={cx('video-report')}>
-                <FontAwesomeIcon icon={faFlag} className={cx('report-icon')} />
+                {/* <FontAwesomeIcon icon={faFlag} className={cx('report-icon')} /> */}
                 Report
             </p>
             <p className={cx('toggle-play-btn')}>
-                <FontAwesomeIcon icon={faPlay} className={cx('play-icon')} />
-                <FontAwesomeIcon icon={faPause} className={cx('pause-icon')} />
+                {/* <FontAwesomeIcon icon={faPlay} className={cx('play-icon')} /> */}
+                {/* <FontAwesomeIcon icon={faPause} className={cx('pause-icon')} /> */}
             </p>
             <p className={cx('volume-btn')}>
-                <FontAwesomeIcon icon={faVolumeHigh} className={cx('volume-icon')} />
+                {/* <FontAwesomeIcon icon={faVolumeHigh} className={cx('volume-icon')} /> */}
             </p>
         </div>
     )
