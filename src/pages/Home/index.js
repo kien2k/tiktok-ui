@@ -11,7 +11,7 @@ function Home() {
     const [videos, getVideos] = useState([]);
     useEffect(() => {
         videoService
-            .getVideo({ type: 'for-you', page: 5 })
+            .getVideo({ type: 'for-you', page: 1 })
             .then((data) => getVideos(data))
             .catch(() => console.log('error'));
     }, []);

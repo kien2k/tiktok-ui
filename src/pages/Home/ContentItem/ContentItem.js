@@ -27,7 +27,7 @@ function ContentItem({ data }) {
                 <Image src={data.user.avatar} alt="avatar" className={cx('avatar')}></Image>
                 <div className={cx('content')}>
                     <div className={cx('info')}>
-                        <Link to={'user'} className={cx('info-link')}>
+                        <Link to={'@user'} className={cx('info-link')}>
                             <h3 className={cx('nick-name')}>
                                 <strong>{data.user.nickname}</strong>
                                 <FontAwesomeIcon icon={faCheckCircle} className={cx('check')} />
@@ -52,20 +52,20 @@ function ContentItem({ data }) {
                                 <div className={cx('interaction-btn')}>
                                     <FontAwesomeIcon icon={faHeart} className={cx('icon')} />
                                 </div>
-                                <strong>130K</strong>
+                                <strong>{data.likes_count}</strong>
                             </div>
                             <div className={cx('interaction-item')}>
                                 <div className={cx('interaction-btn')}>
                                     <FontAwesomeIcon icon={faCommentDots} className={cx('icon')} />
                                 </div>
-                                <strong>500</strong>
+                                <strong>{data.comments_count}</strong>
                             </div>
                             <Tippy interactive delay={[0, 500]} placement="top-end" render={renderLinkShare}>
                                 <div className={cx('interaction-item')}>
                                     <div className={cx('interaction-btn')}>
                                         <FontAwesomeIcon icon={faShare} className={cx('icon')} />
                                     </div>
-                                    <strong>200</strong>
+                                    <strong>{data.shares_count}</strong>
                                 </div>
                             </Tippy>
                         </div>

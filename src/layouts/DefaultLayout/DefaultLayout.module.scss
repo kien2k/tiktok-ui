@@ -8,11 +8,12 @@
     margin-top: var(--default-layout-header-height);
     display: flex;
     width: var(--default-layout-width);
-    padding: 0 var(--default-layout-horizontal-spacer);
+    padding: 0 0 0 var(--default-layout-horizontal-spacer);
     height: 2000px;
     max-width: 100%;
+    justify-content: space-between;
 }
 
-.content {
-    flex: 1;
-}
+// .content {
+//     flex: 1;
+// }

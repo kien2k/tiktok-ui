@@ -24,7 +24,7 @@ function Sidebar() {
 
     useEffect(() => {
         userService
-            .getSuggested({ page: 6, perPage: 5 })
+            .getSuggested({ page: 6, perPage: 7 })
             .then((data) => {
                 getSuggestedUsers(data);
             })
@@ -39,7 +39,8 @@ function Sidebar() {
     }, []);
 
     return (
-        <aside className={cx('wrapper')}>
+        <div className={cx('div-set-position')}>
+            <aside className={cx('wrapper')}>
             <Menu>
                 <MenuItem title="For You" icon={<HomeIcon />} to={config.routes.home} activeIcon={<HomeActiveIcon />} />
                 <MenuItem
@@ -51,8 +52,9 @@ function Sidebar() {
                 <MenuItem title="LIVE" icon={<LiveIcon />} to={config.routes.live} activeIcon={<LiveActiveIcon />} />
             </Menu>
             <SuggestedAccounts label="Suggested accounts" data={suggestedUsers} />
-            <SuggestedAccounts label="Following accounts" />
-        </aside>
+            <SuggestedAccounts label="Following accounts" data={suggestedUsers}/>
+            </aside>
+        </div>
     );
 }
 
