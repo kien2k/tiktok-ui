@@ -1,16 +1,16 @@
-import classNames from "classnames/bind";
+import classNames from 'classnames/bind';
 
-import styles from "./FollowingContent.module.scss"
-import UserItem from "./UserItem"
+import styles from './FollowingContent.module.scss';
+import UserItem from './UserItem';
 
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 
 function FollowingContent() {
-    return ( 
+    return (
         <div className={cx('wrapper')}>
-            <UserItem/>
+            <UserItem />
         </div>
-     );
+    );
 }
 
 export default FollowingContent;
